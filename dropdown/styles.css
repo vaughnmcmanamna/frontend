@@ -1,0 +1,55 @@
+/* Base page styles */
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+/* Container for positioning */
+#dropdown-container {
+  display: inline-block;
+  position: relative;
+}
+
+/* Button styling */
+#dropdown-btn {
+  width: 150px;            /* fixed width */
+  padding: 8px 12px;
+  text-align: center;        /* keeps text left-aligned */
+  white-space: nowrap;     /* prevents wrapping */
+  overflow: hidden;        /* hides overflow */
+  text-overflow: ellipsis; /* shows "..." for long text */
+  background-color: #196e1c;
+  color: white;
+  border: 1px solid #ccc;  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Menu container */
+#dropdown-menu {
+  list-style: none;
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  width: 150px;
+  overflow: hidden;       /* hide content when collapsed */
+  height: 0;              /* start collapsed */
+  /*transition: height 0.3s ease; /* optional fallback for CSS */
+}
+
+
+/* Start hidden */
+.hidden {
+  display: none;
+}
+
+/* Menu items */
+#dropdown-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
