@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dropdown</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D3 Dropdown</title>
+  <link rel="stylesheet" href="style.css"> <!-- optional CSS -->
 </head>
 <body>
-  <script src="script.js"></script>
+
+  <!-- container for the dropdown -->
+  <div id="dropdown-container">
+    <button id="dropdown-btn">Menu ▼</button>
+    <ul id="dropdown-menu"></ul> <!-- D3 will populate this -->
+  </div>
+
+  <!-- your JS file as an ES module -->
+  <script type="module" src="script.js"></script>
+
 </body>
 </html>
