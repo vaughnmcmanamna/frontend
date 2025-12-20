@@ -1,0 +1,178 @@
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 16px;
+  background: #fafafa;
+}
+
+#layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 18px;
+  align-items: start;
+  max-width: 1060px;
+}
+
+#status {
+  margin: 10px 0 12px;
+  font-weight: 600;
+}
+
+h2 {
+  margin-bottom: 6px;
+}
+
+/* ===== Cases grid ===== */
+#cases {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  max-width: 760px;
+}
+
+button.case {
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  min-height: 70px;
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+button.case:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+button.case.opened {
+  opacity: 0.6;
+  cursor: default;
+}
+
+button.case.chosen {
+  border-color: #000;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.15);
+}
+
+/* ===== Case content (opened) ===== */
+.caseContent {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.caseImg {
+  width: 48px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.caseText {
+  text-align: left;
+  line-height: 1.1;
+  font-size: 13px;
+}
+
+.caseName {
+  font-weight: 700;
+}
+
+.caseTier {
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+/* ===== Banker panel ===== */
+#panel {
+  margin-top: 16px;
+  max-width: 760px;
+}
+
+#offer {
+  margin: 8px 0;
+  font-weight: 700;
+}
+
+#offer img {
+  width: 64px;
+  height: 46px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ===== Buttons ===== */
+#deal,
+#nodeal,
+#restart {
+  padding: 10px 14px;
+  font-size: 16px;
+  margin-right: 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+#deal {
+  background: #1e7f34;
+  color: white;
+}
+
+#nodeal {
+  background: #b22222;
+  color: white;
+}
+
+#restart {
+  background: #444;
+  color: white;
+}
+
+/* ===== Result ===== */
+#result {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ===== Reveal log ===== */
+#revealWrap {
+  border-left: 1px solid #ddd;
+  padding-left: 14px;
+}
+
+#revealLog {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+#revealLog li {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.caseContent {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.caseImg {
+  width: 50px;
+  height: 38px;
+  object-fit: cover;
+  border-radius: 1px;
+  flex: 0 0 auto;
+}
+
+.caseText {
+  text-align: left;
+  line-height: 1.1;
+  font-size: 13px;
+}
+.caseName { font-weight: 700; }
+.caseTier { opacity: 0.8; font-size: 12px; }
